@@ -21,7 +21,7 @@ git clone https://github.com/austintgriffith/cloud-eth2.git
 Navigate to the cloud-eth2/geth directory and install Geth (eth1 client):
 
 ```bash
-cd cloud-eth2
+cd ~/cloud-eth2
 cd geth
 chmod +x *.sh
 ./installAndUpdate.sh
@@ -37,3 +37,25 @@ pm2 startup
 
 It will give you a PATH command you need to run:
 ![image](https://user-images.githubusercontent.com/2653167/100650189-c733a800-3300-11eb-8c3e-8bb115eab252.png)
+
+You should be able to follow your `geth.log` now (even after you reboot the machine, it should run at boot):
+
+```bash
+cd ~/cloud-eth2/geth
+tail -f geth.log
+```
+
+![image](https://user-images.githubusercontent.com/2653167/100650726-99029800-3301-11eb-8290-9d865b0e50c7.png)
+
+> It could take a while for your geth node to sync with the mainnet eth1 chain. (You know it is done when it is processing 1 block at a time.)
+
+While it syncs, you can get started with Prysm...
+
+Navigate to the prysm folder, make the script executable, and install:
+
+```bash
+cd ~/cloud-eth2
+cd prysm
+chmod +x *.sh
+./installAndUpdate.sh
+```
