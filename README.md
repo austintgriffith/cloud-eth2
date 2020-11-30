@@ -59,3 +59,10 @@ cd prysm
 chmod +x *.sh
 ./installAndUpdate.sh
 ```
+
+Now you can launch your Prysm beacon chain process and add it to PM2:
+
+```bash
+pm2 start prysm.js
+pm2 save
+```
