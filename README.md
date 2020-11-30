@@ -8,7 +8,7 @@ I went with a `c4.xlarge` with 400GB free
 ![image](https://user-images.githubusercontent.com/2653167/100649361-92732100-32ff-11eb-8451-bb936aba9e17.png)
 
 
-I have ports 30303 and 13000 open in your secuirty group and 22 for ssh from my home ip
+I have ports 30303 and 13000 open in your security group and 22 for ssh from my home ip
 
 ![image](https://user-images.githubusercontent.com/2653167/100649278-71aacb80-32ff-11eb-8089-9a81e38fb35d.png)
 
