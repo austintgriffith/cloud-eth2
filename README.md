@@ -66,3 +66,30 @@ Now you can launch your Prysm beacon chain process and add it to PM2:
 pm2 start prysm.js
 pm2 save
 ```
+
+You can follow the logs for your Prysm beacon chain:
+
+```bash
+tail -f prysm.log
+```
+
+You'll notice that it needs to wait for the geth node to be in sync first:
+
+![image](https://user-images.githubusercontent.com/2653167/100652617-6b6b1e00-3304-11eb-96a1-4372cb7c3ed9.png)
+
+You will want to move your ETH2 keys from the LaunchPad into `~/cloud-eth2/prysm/eth2_validator_keys`.
+
+Then, run the import script to bring them into Prysm:
+
+```bash
+cd ~/cloud-eth2
+cd prysm
+./importKeys.sh
+```
+
+Finally, you are ready to fire up your validator:
+
+```bash
+pm2 start validator.js
+pm2 save
+```
