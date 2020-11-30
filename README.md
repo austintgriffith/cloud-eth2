@@ -12,7 +12,7 @@ I have ports 30303 and 13000 open in your secuirty group and 22 for ssh from my 
 
 ![image](https://user-images.githubusercontent.com/2653167/100649278-71aacb80-32ff-11eb-8089-9a81e38fb35d.png)
 
-SSH in and clone down this repo
+SSH in and clone down this repo:
 
 ```bash
 git clone https://github.com/austintgriffith/cloud-eth2.git
